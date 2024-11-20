@@ -1,0 +1,22 @@
+<!docktype html>
+<html>
+  <head>
+    <title>
+      Cookieによるパスワード入力テスト
+    </title>
+  </head>
+  <body>
+    <script>
+      if (document.cookie=="pass=true"){
+        window.location.href = "https://www.google.com/";
+      }else{
+        var pass prompt("?pass=");
+        if (pass=="1"){
+         document.cookie = "pass=1";
+        }else{
+          alert ("pass=1");
+        }
+      }
+    </script>
+  </body>
+</html>
